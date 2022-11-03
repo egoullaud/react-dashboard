@@ -2,6 +2,7 @@
 import {ColorModeContext, useMode} from './theme'
 //baseline resets css to defaults, themeprovider gives ability to pass themes to mui
 import {CssBaseline, ThemeProvider} from '@mui/material'
+import Topbar from './scenes/global/Topbar';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -15,7 +16,7 @@ function App() {
         <CssBaseline>
           <div className="app">
             <main className='content'>
-              
+             <Topbar/> 
             </main>
           </div>
          </CssBaseline>
