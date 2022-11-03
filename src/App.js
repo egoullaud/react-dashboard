@@ -1,10 +1,26 @@
 
+import {ColorModeContext, useMode} from './theme'
+//baseline resets css to defaults, themeprovider gives ability to pass themes to mui
+import {CssBaseline, ThemeProvider} from '@mui/material'
 
 function App() {
+  const [theme, colorMode] = useMode();
+
   return (
-    <div className="app">
-    
-    </div>
+    //set up color context
+    <ColorModeContext.Provider value={colorMode}>
+    {/* material ui access to theme  */}
+      <ThemeProvider theme={theme}>
+        {/* reset css to defaults */}
+        <CssBaseline>
+          <div className="app">
+            <main className='content'>
+              
+            </main>
+          </div>
+         </CssBaseline>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
 
