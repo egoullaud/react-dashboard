@@ -197,13 +197,17 @@ export const themeSettings = (mode) =>{
 };
 
 //context for color mode 
+// Explanation: create theme for material ui, passing mode into theme settings created below. gives object with proper format (dark or light mode), and then return theme and colormode
+
+
+// context to access function to change mode
 export const ColorModeContext = createContext({
     toggleColorMode: () => {}
 });
 
 export const useMode = () => {
     const [mode, setMode] = useState("dark");
-
+// function to change dark and light
     const colorMode = useMemo(
         () => ({
             toggleColorMode: () =>
@@ -212,4 +216,6 @@ export const useMode = () => {
         []
         );
     const theme = useMemo(()=> createTheme(themeSettings(mode)), [mode])
+
+    return [theme, colorMode];
 }
