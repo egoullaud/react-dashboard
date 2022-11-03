@@ -1,9 +1,10 @@
-## Introduction
-# Dashboard App made with React
+# Introduction
+
+## Dashboard App made with React
 
 I made this project to learn how to make a dashbaord app, as it is something I am looking to incoporate into future projects for clients. I used a tutorial from YouTube by EdRoh. I highly recommend checking out this tutorial as Ed is a wonderful teacher. 
 
-## Getting Started
+# Getting Started
 
 There are QUITE a few bundles to install. I'll leave links for the documentation for you to install. 
 
@@ -12,7 +13,7 @@ npx create-react-app project-name
 cd project-name
 ```
 
-# Packages to install: 
+## Packages to install: 
 
 * create-react-app: https://create-react-app.dev/
 * material ui:https://mui.com/material-ui/getting-started/installation/
@@ -35,7 +36,7 @@ I learned how to use a bunch of new tech in this project, which was super fun. H
 * FullCalendar
 * Data Grid 
 
-# Features
+### Features
 * Light & Dark Mode
 * 4 different Charts
 * 3 different Data Table Pages
