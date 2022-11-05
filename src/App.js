@@ -8,7 +8,7 @@ import Topbar from './scenes/global/Topbar';
 import Sidebar from './scenes/global/Sidebar'
 //pages
 import Dashboard from './scenes/dashboard';
-// import Team from './scenes/team';
+import Team from './scenes/team';
 // import Bar from './scenes/bar';
 // import Invoices from './scenes/invoices';
 // import Contacts from './scenes/contacts';
@@ -37,8 +37,8 @@ function App() {
             <main className='content'>
              <Topbar/> 
              <Routes>
-              <Route pat="/" element={<Dashboard/>}/>
-              {/* <Route path="/team" element={<Team/>}/> */}
+              <Route path="/" element={<Dashboard/>}/>
+              <Route path="/team" element={<Team/>}/>
               {/* <Route path="/contacts" element={<Invoices/>}/> */}
               {/* <Route path="/invoices" element={<Contacts/>}/> */}
               {/* <Route path="/form" element={<Form/>}/> */}
