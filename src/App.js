@@ -11,7 +11,7 @@ import Dashboard from './scenes/dashboard';
 import Team from './scenes/team';
 // import Bar from './scenes/bar';
 // import Invoices from './scenes/invoices';
-// import Contacts from './scenes/contacts';
+import Contacts from './scenes/contacts';
 // import Form from './scenes/form';
 // import Line from './scenes/line';
 // import Pie from './scenes/pie';
@@ -39,8 +39,8 @@ function App() {
              <Routes>
               <Route path="/" element={<Dashboard/>}/>
               <Route path="/team" element={<Team/>}/>
-              {/* <Route path="/contacts" element={<Invoices/>}/> */}
-              {/* <Route path="/invoices" element={<Contacts/>}/> */}
+              <Route path="/contacts" element={<Contacts/>}/>
+              {/* <Route path="/invoices" element={<Invoices/>}/> */}
               {/* <Route path="/form" element={<Form/>}/> */}
               {/* <Route path="/bar" element={<Bar/>}/> */}
               {/* <Route path="/pie" element={<Pie/>}/> */}
